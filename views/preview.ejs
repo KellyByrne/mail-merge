@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mail Merge</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Mail Merge</h1>
+    <div class="left">
+    	<p>Enter names / emails (one per line)</p>
+    </div>
+    <div class ="right">
+   		 <p>Enter the text. The following substitutions are valid: </p>
+   		 <ul>
+   		 		<li>{first}</li>
+   		 		<li>{last}</li>
+   		 		<li>{email}</li>
+   		 </ul>
+   	</div>
+    <form action="/preview" method="post">
+     	<div class= "textbox1">
+       <textarea class = "t1" autofocus placeholder="Joe,Jones,joe@example.com" name="email"></textarea>
+      </div>
+      <div class = "textbox2">
+        <textarea class = "t2" placeholder = "Subject" name="subject"></textarea>
+      </div>
+
+      <div class = "textbox3">
+        <textarea class = "t3" placeholder= "Body" name="textbody"></textarea>
+      </div>
+      <button id="preview">Preview</button>
+    </form>
+    <div>
+    <div class = "emailNum">
+    <p> Emails ( <%= numOfEmails %> ) </p>
+    </div>
+    <% for(var i=0; i< numOfEmails; i++){ %>
+    <div class= "response_box">
+      <input id="xbutton" type="submit" value="X">
+      <p>To: <%= email.split("\n")[i] %> </p>
+      <p>Subject: <%= subject %> </p>
+      <p> <%= textbody %> </p>
+    </div>
+    <% } %>
+  </body>
+</html>

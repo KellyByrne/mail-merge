@@ -1,0 +1,83 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+	margin-bottom: 50px;
+}
+
+.left {
+	float: left;
+	width: 45%;
+	margin-right: 2%;
+}
+.right {
+	float: left;
+	width: 45%;
+	margin-left: 2%;
+	padding-bottom: 50px;
+}
+
+.textbox1 {
+	float: left;
+	width: 50%
+}
+
+.t1 {
+	margin-top: 50px;
+	width: 80%;
+	height: 250px;
+}
+
+.textbox2 {
+	float:right;
+	width: 50%;
+}
+
+button {
+	float: right;
+	margin-right: 10%;
+}
+
+.t2 {
+	width: 80%;
+	
+}
+
+.textbox3{
+	float: right;
+	width: 50%;
+}
+
+.t3 {
+	width: 80%;
+	height: 250px;
+}
+
+.emailNum{
+	margin-left: 10px;
+	font-size: 30px;
+	padding: 10px;
+	width: 80%;
+	float: left;
+}
+
+.response_box {
+	height: 250px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 80%;
+	border: 1px solid black;
+	float: left;
+}
+
+
+#xbutton {
+	float: right;
+}
