@@ -67,7 +67,7 @@ button {
 	float: left;
 }
 
-#response_box {
+.response_box {
 	height: 250px;
 	margin-left: 10px;
 	margin-bottom: 10px;
@@ -79,6 +79,6 @@ button {
 }
 
 
-#xbutton {
+.xbutton {
 	float: right;
 }

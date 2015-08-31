@@ -31,20 +31,20 @@
       </div>
       <button id="preview">Preview</button>
     </form>
-    <div>
+    
     <div class = "emailNum">
     <p> Emails ( <%= numOfEmails %> ) </p>
     </div>
-    <% for(var i=0; i< numOfEmails; i++){ %>
     <div id="parent">
-      <div id= "response_box">
-        <input id="xbutton" type="submit" value="X">
+    <% for(var i=0; i< numOfEmails; i++){ %>
+      <div class= "response_box">
+        <input class="xbutton" type="submit" value="X">
         <p>To: <%= email.split("\n")[i] %> </p>
         <p>Subject: <%= subject %> </p>
         <p> <%= textbody %> </p>
       </div>
+      <% } %>
   </div>
-    <% } %>
     <script src="/javascripts/script.js"></script>
   </body>
 </html>
