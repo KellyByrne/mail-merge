@@ -67,7 +67,7 @@ button {
 	float: left;
 }
 
-.response_box {
+#response_box {
 	height: 250px;
 	margin-left: 10px;
 	margin-bottom: 10px;
@@ -75,6 +75,7 @@ button {
 	width: 80%;
 	border: 1px solid black;
 	float: left;
+	overflow: scroll;
 }
 
 
